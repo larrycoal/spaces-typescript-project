@@ -1,13 +1,13 @@
 import { Action } from '../Actions/types'
+import data from '../../data.json'
+
+const initialState = data
 
 
 
-
-const itemReducer = (state: Array<{}>, action: Action) => {
+const itemReducer = (state: Array<{}>=initialState, action: Action) => {
     switch (action.type) {
-        case "load-item": return {
-            items:action.payload
-        }
+        case "fetch-items": return state
         default: return state
     }
 }

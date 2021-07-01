@@ -42,4 +42,12 @@ export const LoadItems = (items : Array<{}>)=> {
 }
 }
 
+export const FetchItems = ()=> {
+    return (dispatch : Dispatch<Action>)=> {
+        dispatch({
+        type: "fetch-items",
+    })
+}
+}
+
 
