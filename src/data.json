@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Lorem",
+        "shape": "oval",
+        "color": "red"
+    },
+    {
+        "name": "Lorem",
+        "shape": "rectangle",
+        "color": "green"
+    },
+    {
+        "name": "Lorem",
+        "shape": "square",
+        "color": "red"
+    },
+    {
+        "name": "Lorem",
+        "shape": "round",
+        "color": "red"
+    },
+    {
+        "name": "Lorem",
+        "shape": "triangle",
+        "color": "red"
+    },
+    {
+        "name": "Lorem",
+        "shape": "oval",
+        "color": "blue"
+    },
+    {
+        "name": "Lorem",
+        "shape": "oval",
+        "color": "yellow"
+    },
+    {
+        "name": "Lorem",
+        "shape": "oval",
+        "color": "blue"
+    },
+    {
+        "name": "Lorem",
+        "shape": "oval",
+        "color": "red"
+    },
+    {
+        "name": "Lorem",
+        "shape": "oval",
+        "color": "grey"
+    },
+    {
+        "name": "Lorem",
+        "shape": "oval",
+        "color": "blue"
+    },
+    {
+        "name": "Lorem",
+        "shape": "oval",
+        "color": "red"
+    }
+]

@@ -32,3 +32,14 @@ export const fetchUser = ()=> {
     })
 }
 }
+
+export const LoadItems = (items : Array<{}>)=> {
+    return (dispatch : Dispatch<Action>)=> {
+        dispatch({
+        type: "load-item",
+        payload:items
+    })
+}
+}
+
+
