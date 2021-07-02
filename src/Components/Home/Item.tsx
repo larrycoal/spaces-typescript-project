@@ -1,23 +1,18 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { actionCreator } from '../../Store';
+import {  useSelector } from 'react-redux';
 import { State } from '../../Store/Reducer';
+// import { bindActionCreators } from 'redux';
+// import { actionCreator } from '../../Store';
+//import { itemState } from '../../Store/Reducer/itemReducer';
 
-interface ItemInt {
-    name: String,
-    shape: String,
-    color: String
-}
 
 const Item: React.FC = () => {
-    //const dispatch = useDispatch()
-    //const {FetchItems} =bindActionCreators(actionCreator,dispatch)
 
-    const item = useSelector((state: State) => state.item)
+
+    const {item,colorFilter,shapeFilter} = useSelector((state:State) => state.items)
 
     const displayItems = (): any => {
-        //FetchItems()
+        console.log(item,colorFilter,shapeFilter)
         return item.map((item: any) => (
             <div className="item">
                 <div className={item.shape}>

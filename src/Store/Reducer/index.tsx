@@ -4,7 +4,7 @@ import userReducer from './userReducer'
 
 const reducer = combineReducers({
 user : userReducer,
-item: itemReducer
+items: itemReducer
 })
 export type State = ReturnType<typeof reducer>
 export default reducer
