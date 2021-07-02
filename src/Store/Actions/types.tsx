@@ -7,5 +7,9 @@ interface Items {
     type:String,
     payload: Array<{}>
 }
+interface Filter {
+    type:String,
+    payload: {shape:String[],color:String[]}
+}
 
-export type Action = Login | Items
+export type Action = Login | Items | Filter

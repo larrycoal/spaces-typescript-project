@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { actionCreator } from '../../Store';
 interface FilterParam {
-    shape:String[],
-    color:String[]
+    shape: String[],
+    color: String[]
 }
 const Filter = () => {
+    const dispatch = useDispatch()
+    const {FilterItems} = bindActionCreators(actionCreator,dispatch)
     const [filter, setfilter] = useState({
         shape: [
             {
@@ -54,50 +59,57 @@ const Filter = () => {
             }
         ]
     })
-const buildFilterParam = ()=>{
-let filterParam : FilterParam ={
-    shape:[],
-    color:[]
-}
-const {shape,color} = filter
-shape.map((shape)=>{
-   if(shape.active){
-    filterParam.shape.push(shape.name)
-   }
-   return 0
-})
-color.map((color)=>{
-    if(color.active){
-     filterParam.color.push(color.name)
-    }
-    return 0
- })
- console.log(filterParam)
-}   
-const handleFilterChange = (i:number,name:String)=>{
-    if(name === "shape"){
-        filter.shape[i].active = !filter.shape[i].active
-        setfilter({
-            ...filter
+
+
+    const buildFilterParam = () => {
+        let filterParam: FilterParam = {
+            shape: [],
+            color: []
+        }
+        
+        const { shape, color } = filter
+        shape.map((shape) => {
+            if (shape.active) {
+                filterParam.shape.push(shape.name)
+            }
+            return 0
         })
-    }else{
-        filter.color[i].active = !filter.color[i].active
-        setfilter({
-            ...filter
-    })
-}
-buildFilterParam()
-}
-    const showShapeFilter = ()=>{
-        const {shape} =filter
-        return shape.map((shape,i)=>(
-            <span key={i} className={shape.active?"active":""} onClick={()=>handleFilterChange(i,"shape")}>{shape.name}</span>
+        color.map((color) => {
+            if (color.active) {
+                filterParam.color.push(color.name)
+            }
+            return 0
+        })
+        FilterItems(filterParam)
+    }
+    const handleFilterChange = (i: number, name: String) => {
+        if (name === "shape") {
+            filter.shape[i].active = !filter.shape[i].active
+            setfilter({
+                ...filter
+            })
+        } else {
+            filter.color[i].active = !filter.color[i].active
+            setfilter({
+                ...filter
+            })
+        }
+        buildFilterParam()
+    }
+    const showShapeFilter = () => {
+        const { shape } = filter
+        return shape.map((shape, i) => (
+            <span key={i} className={shape.active ? "active" : ""} onClick={() => handleFilterChange(i, "shape")}>{shape.name}</span>
         ))
     }
-    const showColorFilter = ()=>{
-        const {color} =filter
-        return color.map((color,i)=>(
-            <span key={i} className={color.active?"active":""} onClick={()=>handleFilterChange(i,"color")} ></span>
+    const showColorFilter = () => {
+        const { color } = filter
+        return color.map((color, i) => (
+            <span key={i}
+            style={{"backgroundColor":color.name}}
+                className={color.active ? "active" : ""}
+                onClick={() => handleFilterChange(i, "color")}
+            ></span>
         ))
     }
     return (

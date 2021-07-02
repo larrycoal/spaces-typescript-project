@@ -37,24 +37,6 @@
                     padding: 10px 10px;
                     border-radius: 100%;
                     cursor: pointer;
-                    &:nth-child(1){
-                        background-color: red;
-                    }
-                    &:nth-child(2){
-                        background-color: blue;
-                    }
-                    &:nth-child(3){
-                        background-color: green;
-                    }
-                    &:nth-child(4){
-                        background-color: yellow;
-                    }
-                    &:nth-child(5){
-                        background-color: black;
-                    }
-                    &:nth-child(6){
-                        background-color: gray;
-                    }
                 }
             }
         }
