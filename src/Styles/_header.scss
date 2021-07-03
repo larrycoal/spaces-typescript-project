@@ -5,4 +5,14 @@
     margin: 0px 10%;
     padding: 12px;
     height: 5vh;
+    font-size: 24px;
+    button{
+        background-color: white;
+        border: none;
+        font-size: 16px;
+        i{
+            color: red;
+            margin: 0 5px;
+        }
+    }
 }

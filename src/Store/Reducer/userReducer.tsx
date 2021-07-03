@@ -3,12 +3,14 @@ type User = { isLoggedIn: Boolean }
 
 
 
-const userReducer = (state: User = { isLoggedIn: false }, action: Action) => {
+const userReducer = (state: User = { isLoggedIn: false }, action: Action):User | any => {
     switch (action.type) {
         case "login": return {
             isLoggedIn: action.payload
         }
-        case "fetchUser" : return state
+        case "logout" : return {
+            isLoggedIn:false
+        }
         default: return state
     }
 }

@@ -33,10 +33,10 @@ const filter = (filters:Filter["payload"]):itemState=>{
   })
   if(shape.length === 5 && color.length === 6){
       filteredTitle = "All Items"
-  }else if((color.length === 6 && shape.length > 1)||(color.length > 1 && shape.length === 5)){
+  }else if((color.length === 6 && shape.length > 1)||(color.length > 1 && shape.length === 5) ||(color.length > 1 && shape.length > 1)){
     filteredTitle = "Multiple Items"
   }else if( shape.length ===5 && color.length === 1){
-    filteredTitle = "All red Items"
+    filteredTitle = `All ${color[0]} Items`
   }else if( shape.length ===1 && color.length === 6){
     filteredTitle = `All ${shape[0]} item`
   } else if( shape.length > 1 && color.length === 1){
