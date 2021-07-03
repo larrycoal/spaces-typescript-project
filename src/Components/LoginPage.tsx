@@ -7,7 +7,7 @@ import { State } from '../Store/Reducer/index'
 
 interface userprops extends RouteComponentProps { };
 
-const LoginPage: React.FC<userprops> = (props) => {
+const LoginPage: React.FC<userprops|any> = (props) => {
     const [user, setUser] = useState({ username: "", password: "" })
     const dispatch = useDispatch()
     const { Login } = bindActionCreators(actionCreator, dispatch)
@@ -50,6 +50,12 @@ const LoginPage: React.FC<userprops> = (props) => {
                     value={user.password}
                 />
                 <button onClick={handleLogin}>Login</button>
+                {
+                isLoggedIn.error?
+                <div className="error">
+                    invalid username or password
+                </div>:null
+            }
             </form>
         </div>
     );

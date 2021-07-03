@@ -17,8 +17,8 @@ const Item: React.FC = () => {
                 </div>
             )
         }
-        return item.map((item: any) => (
-            <div className="item">
+        return item.map((item: any,i:number) => (
+            <div key={i} className="item">
                 <div
                     style={{ "background": item.color }}
                     className={item.shape}>

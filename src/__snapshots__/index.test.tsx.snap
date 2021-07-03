@@ -1,0 +1,327 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component renders item correctly 1`] = `
+<div
+  className="item-wrapper"
+>
+  <p>
+    All Items
+  </p>
+  <div
+    className="item-container"
+  >
+    <div
+      className="item"
+    >
+      <div
+        className="oval"
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="rectangle"
+        style={
+          Object {
+            "background": "green",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="square"
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="round"
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="triangle"
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="triangle"
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="square"
+        style={
+          Object {
+            "background": "yellow",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="round"
+        style={
+          Object {
+            "background": "blue",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="triangle"
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="square"
+        style={
+          Object {
+            "background": "grey",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="rectangle"
+        style={
+          Object {
+            "background": "blue",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="oval"
+        style={
+          Object {
+            "background": "yellow",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="square"
+        style={
+          Object {
+            "background": "blue",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="oval"
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="rectangle"
+        style={
+          Object {
+            "background": "green",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="square"
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="round"
+        style={
+          Object {
+            "background": "blue",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="triangle"
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="triangle"
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="square"
+        style={
+          Object {
+            "background": "yellow",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="round"
+        style={
+          Object {
+            "background": "black",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="triangle"
+        style={
+          Object {
+            "background": "red",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="square"
+        style={
+          Object {
+            "background": "green",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="rectangle"
+        style={
+          Object {
+            "background": "black",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="oval"
+        style={
+          Object {
+            "background": "blue",
+          }
+        }
+      />
+    </div>
+    <div
+      className="item"
+    >
+      <div
+        className="square"
+        style={
+          Object {
+            "background": "yellow",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
