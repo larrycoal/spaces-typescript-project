@@ -14,6 +14,7 @@
             font-size: small;
             .shapes-btn{
                 display: flex;
+                flex-wrap: wrap;
                 gap: 20px;
                 margin: 10px 0px;
                 span{
@@ -30,6 +31,7 @@
                 display: flex;
                 gap: 20px;
                 margin: 10px 0px;
+                flex-wrap: wrap;
                 .active{
                     box-shadow: 0px 0px 10px 2px rgb(70, 62, 62);
                 }

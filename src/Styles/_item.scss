@@ -12,6 +12,10 @@
     gap: 20px;
     overflow: scroll;
     height: 65vh;
+    .not-found{
+        font-size: 32px;
+        align-self: center;
+    }
     .item{
         height: 200px;
         width: 200px;

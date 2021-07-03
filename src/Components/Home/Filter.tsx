@@ -80,26 +80,49 @@ const Filter = () => {
             }
             return 0
         })
-        FilterItems(filterParam)
+        if(filterParam.color.length===0 && filterParam.shape.length === 0){
+            
+           shape.map((shape)=>{
+              shape.active=!shape.active
+              return 0
+           })
+           color.map((color)=>{
+            color.active=!color.active
+            return 0
+         })
+         setfilter({
+             shape:shape,
+             color:color
+         })
+         buildFilterParam()
+        }else{
+            FilterItems(filterParam)
+        }
+       
     }
     const handleFilterChange = (i: number, name: String) => {
+        const {shape,color} = filter
         if (name === "shape") {
-            filter.shape[i].active = !filter.shape[i].active
+            shape[i].active = !shape[i].active
             setfilter({
                 ...filter
             })
         } else {
-            filter.color[i].active = !filter.color[i].active
+            color[i].active = !color[i].active
             setfilter({
                 ...filter
             })
         }
+
         buildFilterParam()
     }
     const showShapeFilter = () => {
         const { shape } = filter
         return shape.map((shape, i) => (
-            <span key={i} className={shape.active ? "active" : ""} onClick={() => handleFilterChange(i, "shape")}>{shape.name}</span>
+            <span key={i} 
+            className={shape.active ? "active" : ""} 
+            onClick={() => handleFilterChange(i, "shape")}
+            >{shape.name}</span>
         ))
     }
     const showColorFilter = () => {

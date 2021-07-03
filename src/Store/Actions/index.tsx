@@ -43,7 +43,6 @@ export const LoadItems = (items : Array<{}>)=> {
 }
 
 export const FilterItems = (filter :{shape:String[],color:String[]})=> {
-    console.log("called")
     return (dispatch : Dispatch<Action>)=> {
         dispatch({
         type: "filter-items",

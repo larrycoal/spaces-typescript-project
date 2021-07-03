@@ -26,7 +26,32 @@
     },
     {
         "name": "Lorem",
-        "shape": "oval",
+        "shape": "triangle",
+        "color": "red"
+    },
+    {
+        "name": "Lorem",
+        "shape": "square",
+        "color": "yellow"
+    },
+    {
+        "name": "Lorem",
+        "shape": "round",
+        "color": "blue"
+    },
+    {
+        "name": "Lorem",
+        "shape": "triangle",
+        "color": "red"
+    },
+    {
+        "name": "Lorem",
+        "shape": "square",
+        "color": "grey"
+    },
+    {
+        "name": "Lorem",
+        "shape": "rectangle",
         "color": "blue"
     },
     {
@@ -36,18 +61,62 @@
     },
     {
         "name": "Lorem",
-        "shape": "oval",
+        "shape": "square",
         "color": "blue"
-    },
-    {
+    },  {
         "name": "Lorem",
         "shape": "oval",
         "color": "red"
     },
     {
         "name": "Lorem",
-        "shape": "oval",
-        "color": "grey"
+        "shape": "rectangle",
+        "color": "green"
+    },
+    {
+        "name": "Lorem",
+        "shape": "square",
+        "color": "red"
+    },
+    {
+        "name": "Lorem",
+        "shape": "round",
+        "color": "blue"
+    },
+    {
+        "name": "Lorem",
+        "shape": "triangle",
+        "color": "red"
+    },
+    {
+        "name": "Lorem",
+        "shape": "triangle",
+        "color": "red"
+    },
+    {
+        "name": "Lorem",
+        "shape": "square",
+        "color": "yellow"
+    },
+    {
+        "name": "Lorem",
+        "shape": "round",
+        "color": "black"
+    },
+    {
+        "name": "Lorem",
+        "shape": "triangle",
+        "color": "red"
+    },
+    {
+        "name": "Lorem",
+        "shape": "square",
+        "color": "green"
+    },
+    {
+        "name": "Lorem",
+        "shape": "rectangle",
+        "color": "black"
     },
     {
         "name": "Lorem",
@@ -56,7 +125,7 @@
     },
     {
         "name": "Lorem",
-        "shape": "oval",
-        "color": "red"
+        "shape": "square",
+        "color": "yellow"
     }
 ]
